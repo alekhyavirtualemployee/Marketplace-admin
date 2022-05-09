@@ -1,0 +1,32 @@
+{
+  "name": "school-admin-panel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix front-end && npm run build --prefix front-end"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osamahafez/school-admin-panel.git"
+  },
+  "author": "Osama Hafez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osamahafez/school-admin-panel/issues"
+  },
+  "homepage": "https://github.com/osamahafez/school-admin-panel#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.9",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^11.1.0"
+  }
+}
